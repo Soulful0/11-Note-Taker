@@ -9,4 +9,4 @@ pageRouter.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/notes.html"));
 });
 
-module.exports = { pageRouter };
+module.exports = pageRouter;

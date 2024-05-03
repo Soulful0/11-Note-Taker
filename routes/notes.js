@@ -1,9 +1,13 @@
 const pageRouter = require("express").Router();
 
 pageRouter.get("/", (req, res) => {
-  // path.join(__dirname, "../public/index.html");
+  // res.json(db.json);
 });
 
-pageRouter.post();
+pageRouter.post("/", (req, res) => {
+  res.send(req.body);
+});
 
-pageRouter.delete();
+pageRouter.delete("/", (req, res) => {});
+
+module.exports = pageRouter;
