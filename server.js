@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use("/", pages);
-app.use("/api", notes);
+app.use("/api/notes", notes);
 
 app.listen(PORT, () => {
   console.info(`Server started on localhost:${PORT}`);
